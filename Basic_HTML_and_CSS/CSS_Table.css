@@ -1,0 +1,8 @@
+table {border: 2px solid blue;}
+td:hover {background-color: pink;
+		color: black; }
+tr, th {background-color: teal;
+	color: white; }
+tr, td {background-color: yellow;
+	color: black}
+	
