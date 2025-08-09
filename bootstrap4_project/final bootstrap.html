@@ -38,7 +38,7 @@
                         <a class="nav-link text-primary font-weight-bold" href="#showtimes">Showtimes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary font-weight-bold active" href="#signup">Deals</a>
+                        <a class="nav-link text-primary font-weight-bold active" href="#deals">Deals</a>
                     </li>
                 </ul>
 
@@ -81,13 +81,13 @@
                     <h3>Now Playing</h3>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <a class="nav-link" href="#">Kong:Skull Island</a>
+                            <a class="nav-link" href="#kong">Kong:Skull Island</a>
                         </li>
                         <li class="list-group-item">
-                            <a class="nav-link" href="#">Ghost in the Shell</a>
+                            <a class="nav-link" href="#ghost">Ghost in the Shell</a>
                         </li>
                         <li class="list-group-item">
-                            <a class="nav-link" href="#">Beauty and the Beast</a>
+                            <a class="nav-link" href="#beast">Beauty and the Beast</a>
                         </li>
                     </ul>
                 </div>
@@ -123,11 +123,13 @@
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                        <img class="card-img-top" src="./img/kongskullisland.jpg" alt="Card image cap">
+                        <img id="kong" class="card-img-top" src="./img/kongskullisland.jpg" alt="Card image cap">
                         <h4><center><span class="badge badge-danger">Kong:Skull Island</span></h4></center>
                         <p class="card-text text-center">A U.S. military and scientific team sets out to survey an uncharted remote island, unaware of the gigantic surprise that lies in wait for them.</p>
                         <center><a class="btn btn-warning font-weight-bold my-3" href="https://youtu.be/44LdLqgOpjo" role="button" target="_blank">Watch Trailer</a></center>
                         <h4><center><span class="badge badge-success">Cinema1</span></h4></center>
+                        <!--call buy tickets modal-->
+                         <center><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#buytickets">Buy Tickets</button></center>
                         <center><span class="badge badge-pill badge-info">12pm-2pm</span>
                         <span class="badge badge-pill badge-info">3pm-5pm</span>
                         <span class="badge badge-pill badge-info">6pm-8pm</span></center>
@@ -139,11 +141,13 @@
             <div class="col-sm-4">
                 <div class="card"> 
                     <div class="card-body">
-                        <img class="card-img-top" src="./img/ghostintheshell.jpg" alt="Card image cap">
+                        <img id="ghost" class="card-img-top" src="./img/ghostintheshell.jpg" alt="Card image cap">
                         <h4><center><span class="badge badge-danger">Ghost in the Shell</span></h4></center>
                         <p class="card-text text-center">In the near future, Major Mira Killian is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.</p>
                         <center><a class="btn btn-warning font-weight-bold my-3" href="https://youtu.be/tRkb1X9ovI4" role="button" target="_blank">Watch Trailer</a></center>
                         <h4><center><span class="badge badge-success">Cinema2</span></h4></center>
+                         <!--call buy tickets modal-->
+                        <center><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#buytickets">Buy Tickets</button></center>
                         <center><span class="badge badge-pill badge-info">12pm-2pm</span>
                         <span class="badge badge-pill badge-info">3pm-5pm</span>
                         <span class="badge badge-pill badge-info">6pm-8pm</span></center>
@@ -154,11 +158,13 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./img/beautyandthebeast.jpg" alt="Card image cap">
+                        <img id="beast" class="card-img-top" src="./img/beautyandthebeast.jpg" alt="Card image cap">
                         <h4><center><span class="badge badge-danger">Beauty and the Beast</span></h4></center>
                         <p class="card-text text-center">A brave, beautiful, and brilliant young woman is imprisoned by a beast in his castle. Despite her fears, she learns to see beyond the beast's hideous exterior and realize the gentle heart of the true prince within him.</p>
                         <center><a class="btn btn-warning font-weight-bold my-3" href="https://youtu.be/pnkgw6pAKkM" role="button"target="_blank">Watch Trailer</a></center>
                         <h4><center><span class="badge badge-success">Cinema3</span></h4></center>
+                         <!--call buy tickets modal-->
+                        <center><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#buytickets">Buy Tickets</button></center>
                         <center><span class="badge badge-pill badge-info">12pm-2pm</span>
                         <span class="badge badge-pill badge-info">3pm-5pm</span>
                         <span class="badge badge-pill badge-info">6pm-8pm</span></center>
@@ -171,20 +177,119 @@
 
 <!---/Showtimes-->
 
+<!--jumbotron heading-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color: #fff;font-family:roboto;font-weight:900;text-transform: uppercase;">
+                    Movie Deals</h1>
+                <p class="lead">Check out our monthly deals...</p>
+                <!--movie deals-->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+                <!--/movie deals--> 
+            </div>
+        </div>
+<!--jumbotron heading-->
 
-        <section id="signup">
-            <div class="jumbotron jumbotron-fluid text-black text-center bg-secondary">
-                <div class="container">
-                    <h2 class="font-weight-bold text-light">Sign Up for Movie Club Rewards!</h2>
-                    <div class="form-group">
+<!--signup form-->
+        <div class="row">
+            <div class="container text-center col-md-6" id="deals">
+                <div class="container text-center">
+                    <h1 class="display-5 my-4 col-lg-auto text-primary">Stay Current on Movies</h1>
+                    <div class="input-group mb-5 input-group-sm">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <button type="submit" class="btn btn-primary my-3">Submit</button>
+                        <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie reward deals!.">SignUp</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- /signup form-->
 
-        
+        <!--form modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="register">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register to recieve movie deals!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <fieldset class="form-group">
+                                <label for="firstname">First Name: </label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="lastname">Last Name: </label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="email">Email: </label>
+                                <input type="email" class="form-control" id="email" placeholder="Email...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="password">Pasword: </label>
+
+                                <input type="password" class="form-control" id="password" placeholder="Password..."
+                                data-toggle="tool-tip" title="Passwords are case sensitive.">
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /form modal--> 
+         
+        <!--buy tickets form  modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="buytickets">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Buy tickets here</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <fieldset class="form-group">
+                                <label for="firstname">First Name: </label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="lastname">Last Name: </label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="movietickets">Movie Tickets </label>
+                                <input type="number" class="form-control" id="movietickets" placeholder="select number of tickets to buy...">
+                                <small><p>***Children under 11yrs of age are free...</p></small>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="contact">Contact Number: </label>
+                                <input type="text" class="form-control" id="contact" placeholder="your contact number...">
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Buy Ticket</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/buy tickets form  modal-->
+
+
+
+        <!--footer-->
         <div class="container my-5">
             <ul class="nav nav-inline">
                 <li class="nav-item">
@@ -202,12 +307,9 @@
 
             </ul>
         </div>
+        <!--/footer-->
 
-
-
-
-
-        </div>
+    </div>
 
 
 
@@ -218,5 +320,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  
+    <!--popover script-->
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+        
+    </script>
+
+</body>
 </html>
