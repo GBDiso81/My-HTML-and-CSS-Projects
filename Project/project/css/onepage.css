@@ -1,0 +1,8 @@
+.main-menu{
+    background-color: aqua;
+}
+.navbar {
+  height: 105px;
+  max-height: 340px;
+  display: inline-block;
+}

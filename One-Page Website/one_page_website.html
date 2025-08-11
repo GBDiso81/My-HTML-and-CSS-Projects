@@ -1,103 +1,144 @@
 <!DOCTYPE html>
-<html lang="En">
-	<head>
-		<title>The Mobile Hub</title>
-		<meta charset="utf-8"
-	</head>
-	<head>
-	<style>
-		.myDiv {
-		border: 7px solid green;
-		border-top-right-radius:50px;
-		background-color:midnightblue;    
-		text-align: center;}
-	</style>
-	</head>
-	
-	<body>
-	<!--NAV -->
-		<nav>
-		<center>
-			<a href="#home">HOME</a> |
-			<a href="#gallery">GALLERY</a> |
-			<a href="#reachus">Order Now</a> |
-			<br>
-			<br>
-		</center>
-		</nav>
+<html>
+        <meta name="viewport" content="width=device-width, initial-scale=1"><title>The Mobile Hub</title>
+		<meta charset="utf-8">
+		<script src="./JS/one_page_website.js" defer></script>
+		<link rel="stylesheet" href="./css/one_page_website.css">
 
-	<!--END NAV -->
-	
-	<section>
-	<div class="myDiv">
-		<h1>Your Mobile Hub Solutions</h1>
-			<style>h1{ color: yellow;}</style>
-		<p style="color:pink;font-family:verdana"><b>Giving our customers ease for best mobile choices at affordable rates!</b></p><br>
-		
-		<p>
-			<p style="color:aqua">We know the top phones, so we’ll find your perfect match the first time around.</p>
-			<p style="color:aqua">We will help you find your best plan</p>
-			<p style="color:aqua">We're always on top of the latest tech so you'll never be late to the game.</p>
-		</p><br>
-		
-	</section><br><br><br>
-	<!--Gallery -->
-	<section id="gallery">
-			<div class="container">
-			<center>
-		<h2>Gallery</h2>
-			<style>h2{font-family:verdana;color:blue;}</style>
+<body>
+
+<!--NAV-->
+		<div class="navbar">
+  			<a href="#home">Home</a>
+  			<a href="#Galleries">Gallery</a>
+            <a href="#latest">Upcoming Models!</a>
+  			<a href="#reachus">Order Now!</a>
+  		</div>
+	<!--END NAV-->
+
+	<!--HOME-->
+		<div id="home">
+			<div class="home-main">
+				<h1>Home</h1>
 			</div>
-		<div>
-			<div>
-			<center>
-				<img src="./images/thumb/thumb1.jpg" alt="Samsung S25 Ultra 5G" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Samsung S25 Ultra 5G<b></div><br><br>
-				
-				<img src="./images/thumb/thumb2.jpg" alt="Samsung Galaxy Flip7 5G" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Samsung Galaxy Flip7 5G<b></div><br><br>
-				
-				<img src="./images/thumb/thumb3.jpg" alt="Samsung Galaxy Z Fold 7 5G" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Samsung Galaxy Z Fold 7 5G<b></div><br><br>
-				
-				<img src="./images/thumb/thumb4.jpg" alt="Apple Iphone16 Pro Max" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Apple Iphone16 Pro Max<b></div><br><br>
-				
-				<img src="./images/thumb/thumbs5.jpg" alt="Apple ipad Pro" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Apple ipad Pro<b></div><br><br>
-				
-				<img src="./images/thumb/thumbs6.jpg" alt="Google Pixel 10Pro" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Google Pixel 10Pro<b></div><br><br>
-				
-				<img src="./images/thumb/thumbs7.jpg" alt="Google Pixel 10Pro" width="auto" height="auto";>
-				</a>
-				<div class="desc"><b>Xioami 14 Ultra<b></div><br><br>
-				
-			</div>
-	
 		</div>
-	</section>
-	<!--end gallery -->
-	
-	<!-- Videos -->
-		<center>
+		<div>
+			<div class="desc">
+                <h1>CellHub - Your Mobile Solutions!</h1>
+            </div>
+            <div class="desc1" >
+				<h2> Our customers ease for best mobile choices at affordable rates!</h2>
+				<h3>We know the top phones, so we’ll find your perfect match the first time around.<br>
+					We will help you find your best plan.<br>
+					We're always on top of the latest tech so you'll never be late to the game.</h3>
+
+                    <img class="cppic" src="./images/download.jpg">
+			</div>
+		
+		
+	<!--END HOME-->
+
+<h2 id="Galleries" style="text-align:center">Gallery</h2>
+
+<div class="row"> 
+  <div class="column">
+    <img class="pics" src="./images/thumb/thumb1.jpg" style="width:60%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img class="pics" src="./images/thumb/thumb2.jpg" style="width: 57%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img class="pics" src="./images/thumb/thumb3.jpg" style="width:60%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img class="pics" src="./images/thumb/thumbs5.jpg" style="width:60%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img class="pics" src="./images/thumb/thumbs6.jpg" style="width:60%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img class="pics" src="./images/thumb/thumbs7.jpg" style="width:54%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/thumb/thumb1.jpg" style="width:39%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/thumb/thumb2.jpg" style="width:36.5%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/thumb/thumb3.jpg" style="width:37.5%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/thumb/thumbs5.jpg" style="width:37.5%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/thumb/thumbs6.jpg" style="width:37.5%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/thumb/thumbs7.jpg" style="width:34%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumb1.jpg" style="width:60%" onclick="currentSlide(1)" alt="Samsung Galaxy S25 Ultra 5G">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumb2.jpg" style="width:57%" onclick="currentSlide(2)" alt="Samsung Galaxy Z Fold">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumb4.jpg" style="width:59%" onclick="currentSlide(3)" alt="Apple Iphone16 Pro Max">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbs5.jpg" style="width:60%" onclick="currentSlide(4)" alt="Apple Ipad Pro">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbs6.jpg" style="width:60%" onclick="currentSlide(4)" alt="Google Pixel 10Pro">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbs7.jpg" style="width:55%" onclick="currentSlide(4)" alt="Xiaomi 15 Ultra">
+    </div>
+  </div>
+</div>
+
+
+<!-- Videos -->
+		<div id="latest" >
 		<h2>New Upcoming Smartphones</h2>
 			<iframe width="auto" height="auto" src="https://www.youtube.com/embed/dM0qJV5GNoo" title="TOP 7 Best New Upcoming Smartphones 2025/26 - EXTREME Flagship Phones 2025/26! 📱" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/NUOF2Ud_KgM" title="TOP 13 Best New Upcoming Smartphones 2025 — EXTREME Flagship Mobile Phones 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/a4NJNdHqs_I" title="Samsung Galaxy S25 Ultra Review: The Tables Have Turned!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/L6yCY7CCsQ8" title="iPhone 17 Pro &amp; Pro Max – 17 NEW Features You Need to Know!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>	
 		<br><br><br>
 	<!--End of videos -->
 
-	
-	<section>
-		<section id="reachus"
-	<!--Order Now -->
-	
+    <!--Order Now -->
+        <div id="reachus">
 			<h2>Pick yours now!</h2>
 				<br><br>
 			<form action="/action_page.php">
@@ -105,28 +146,27 @@
 				<select id="cpmodels" name="cpmodels">
 					<option value="Choose model">Choose model...</option>
 					<option value="Samsung S25 Ultra 5G">Samsung S25 Ultra 5G</option>
-					<option value="Samsung Galaxy Flip7 5G">Samsung Galaxy Flip7 5G</option>
-					<option value="Samsung Galaxy Z Fold 7 5G">Samsung Galaxy Z Fold 7 5G</option>
+					<option value="Samsung Galaxy Z Fold">Samsung Galaxy Z Fold</option>
 					<option value="Apple Iphone16 Pro Max">Apple Iphone16 Pro Max</option>
 					<option value="Apple ipad Pro">Apple ipad Pro</option>
 					<option value="Google Pixel 10Pro">Google Pixel 10Pro</option>
-					<option value="Xioami 14 Ultra">Xioami 14 Ultra</option>
+					<option value="Xioami 15 Ultra">Xioami 15 Ultra</option>
 				</select>
 				
 			</form><br>
-				
-			<form action="/action_page.php">
-				<label for="fname">First name:</label><br>
-				<input type="text" id="fname" name="fname"><br>
-				<label for="lname">Last name:</label><br>
-				<input type="text" id="lname" name="lname"><br><br>
-				<label for="email">Email:</label><br>
-				<input type="email" id="email" name="email"><br><br>
-				<label for="contact">Contact Num:</label><br>
-				<input type="contact" id="contact" name="contact"><br><br>
-				
-				<input type="submit" value="Submit">
-			</form>
+        </div>	
+			<div class="form-order">
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="" placeholder="First Name">
+							<input class="rsvp" type="text" value="" placeholder="Last Name">
+							<input class="rsvp" type="email" value="" placeholder="Email Address">
+							<input class="rsvp" type="text" value="" placeholder="Phone Number">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+			</div>
 	<!--end of Order Now -->
 			<br>
 			<br>
@@ -139,6 +179,7 @@
 		<a href="mailto:hege@example.com">gbdiso81@gmail.com</a></p>
 	</footer>
 	
-	
-	</body>
+
+    
+</body>
 </html>
