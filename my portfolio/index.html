@@ -10,10 +10,24 @@
 
     <body>
 
+        <div id="animation" ></div>
+
+        <script>
+            
+            document.body.classList.add('fade-out');
+
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+         
+        </script>
+
+        <!--Utilize HTML bookmarks to link to various sections of a webpage-->
         <div class="navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
+            <a href="#socmed">Socmed</a>
             <a href="#Contact">Contact</a>
         </div>
         
@@ -29,8 +43,9 @@
         </div>
 
         <div class="Video_Text">
-            <h1 class="white-text">Glen Mark Diso's Portfolio</h1>
+            <h1 class="white-text" style="font-size: 5vw;">Glen Mark Diso's Portfolio</h1>
             <strong>
+                <hr>
                 <p class="center">
                     <q>"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."</q>
                         
@@ -41,6 +56,7 @@
                     <br> My name is Glen Mark Diso. Welcome to my portfolio website. On it, I will tell you about my background and experience.
                     <br>
                     <br> Thank you for stopping by and enjoy! 
+                <hr>
                 </p>
             </strong>
         </div>
@@ -49,6 +65,7 @@
             <div class="column_2">
                 <img src="images/image1.jpg" alt="me at work pic">
             </div>
+
             <div class="column_1">
                 <h1>About</h1>
                 <p>
@@ -60,6 +77,13 @@
                 </p>
             </div>
         </div>
+
+        <!--smooth scroll-->
+        <div id="socialmed">
+            <a class="socmedsect" href="#Contact">Click Me to Smooth Scroll to Section 2 Below</a>
+        </div>
+        <!--smooth scroll-->
+
 
         <div class="row" id="GitHub">
             <div class="column_1">
@@ -75,23 +99,112 @@
             </div>
         </div>
 
+
+        <!--automatic slideshow--->
+        <div class="slideshow-container" id="slideshow">
+            <div class="column_2">
+                <div class="mySlides fade">
+                    <img src="./images/animates/1.jpg"  alt="pic1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/animates/2.jpg"  alt="pic2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/animates/3.jpg"  alt="pic3">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/animates/4.jpg"  alt="pic4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/animates/5.jpg"  alt="pic5">
+                </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span> 
+            </div>
+
+            </div>
+            <div class="column_1">
+                <div class="aol">
+                    <p>My Instructor and School!</p>
+                    <iframe width="420" height="240" src="https://www.youtube.com/embed/4gNpKQt5mJY" title="Software and Web Development | AOLCC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+
+
+
+       <div class="row" id="socmed">
+            <div class="column_1">
+                <img src="images/image3.jpg"  alt="me at work pic">
+            </div>
+            <div class="column_2">
+                <h1>Visit My Socials!</h1>
+                
+                <a href="https://drive.google.com/file/d/1HKbBN4S7bikYy6lGEGrjqaci9bgqJmbu/view?usp=drive_link" target=""><img class="socials" src="images/fb.jpg"  alt="fb profile"></a>
+                <a href="https://drive.google.com/file/d/1KWY8gSu5Q0oblT7UPKdheIjaLKYGkLOc/view?usp=drive_link" target=""><img class="socials" src="images/viber.jpg" alt="viber profile">
+                <a href="https://drive.google.com/file/d/1D2ERA7IBWCrrznhhHDEWUFWEtDGIO1bS/view?usp=drive_link" target=""><img class="socials" src="images/zoom.jpg"  alt="zoom profile">
+                <a href="https://drive.google.com/file/d/1pdPKjychpO3eAH--lC0XQw7upYMa92se/view?usp=drive_link" target=""><img class="socials" src="images/whatsapp.jpg"  alt="whatsapp profile">
+                <a href="https://drive.google.com/file/d/1qiJvzUVb0ofdZQUeWnB7sE0rz7B_z_mU/view?usp=drive_link" target=""><img class="socials" src="images/skype.jpg"  alt="skype profile">
+                <a href="https://drive.google.com/file/d/1blOw9zdyV96r89Xu0sDy8uJ0FrMyZBsZ/view?usp=drive_link" target=""><img class="socials" src="images/telegram.jpg"  alt="telegram profile">
+            </div> 
+        </div>
+
+
+        <!--smooth scroll-->
+        <div id="socialmed">
+            <a class="socmedsect" href="#About">Click Me to Smooth Scroll to Section 2 Below</a>
+        </div>
+        <!--smooth scroll-->
+
+
         <div class="row" id="Contact">
             <div class="column_2 column_tall">
-                <img src="images/image2.jpg" alt="Contact_Image">
+                <img class="contactimage" src="images/image2.jpg" alt="Contact_Image">
+                <p >hover over to zoom</p>
             </div>
 
             <div class="column_1 column_tall">
                 <h1>Contact</h1>
 
-                <form action="" method="post">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    Name: <input type="text" id="yourname" name="fullname" placeholder="Please enter your name here">
+                    Email: <input type="text" id="email" name="emailadd" placeholder="Required details...">
+                    Contact Num: <input type="text" id="telnum" name="contactnum" placeholder="Your contact number here... (Optional)">
+                    
+                    <input type="submit" value="SUBMIT">`
                 </form>
+
+                
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+
+                        <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+
+
+
+                <button class="sticky" onclick="openForm()">For Homepage Request</button>
+                
+
+
             </div>
         </div>
 
@@ -101,5 +214,11 @@
                 <br>
             </p>
         </footer>
+
+        
+
+        <script src="JS/portfolio.js"></script>
+        
+
     </body>
 </html>

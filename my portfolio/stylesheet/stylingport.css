@@ -1,5 +1,16 @@
 body{
     margin: 0%;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+html {
+    background-color: red;
 }
 
 h1{
@@ -171,6 +182,7 @@ footer{
     padding-top: 3%;
     height: 400px;
     background-color: #f2f2f2;
+    border-radius: 5px;
 }
 
 @media screen and (max-width:576px) {
@@ -186,11 +198,13 @@ footer{
     padding-top: 1.9%;
     height: 400px;
     background-color: #4d4d4d;
+    color: black;
+    font-weight: bold;
 }
 
 .column_tall{
-    padding-top: 3.5%;
-    height: 450px;
+    padding-top: 5px;
+    height: 460px;
 }
 
 .row::after{
@@ -242,3 +256,180 @@ form {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#email {
+    width: 700px;
+    height: 40px;
+    border: solid black;
+}
+
+#yourname {
+    border:solid black;
+}
+
+#telnum {
+    border: solid black;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 180px;
+  right: 100px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 3px;
+  background-color: lightgray;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 0px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: teal;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 170px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: orange;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* animation */
+.white-text {
+  width: 1100px;
+  height: 90px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+  border-radius: 20px;
+  border: solid turquoise;
+  border-width: 3px;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:350px; top:0px;}
+  50%  {background-color:blue; left:60px; top:0px;}
+  75%  {background-color:green; left:0px; top:0px;}
+  100% {background-color:red; left:60px; top:0px;}
+}
+
+/* zoom in and out */
+.contactimage {
+  padding-top: 40px;
+  border-radius: 10px;
+  transition: transform .2s;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.contactimage:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.socials {
+    height: 20%;
+    margin-right: auto;
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 40px;
+    }
+
+/*smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+  }
+#socmed {
+  height: 400px;
+  }
+.socmedsect {
+    color: red;
+    font-weight: bold;
+}
+#socialmed {
+    text-align: center;
+    height: 0px;
+}
+
+
+
+.active {
+  background-color: greenyellow;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
+.aol {
+    text-align: center;
+    margin-top: -40px;
+    margin-top: -40px;
+    margin: -10px;
+    }
+
+.sticky {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: orange;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+
+
